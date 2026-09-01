@@ -467,3 +467,4 @@ elements.orderDialog.addEventListener("click", event => {
 
 newIdempotencyKey();
 renderCart();
+connect();

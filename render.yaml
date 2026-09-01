@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: xingji-catalog-order-service
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: API_KEY
+        value: test-key
+      - key: WEBHOOK_DELIVERY_ENABLED
+        value: "false"

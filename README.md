@@ -69,6 +69,16 @@ Then open [http://localhost:8080](http://localhost:8080) and enter `local-dev-ke
 
 If `API_KEY` is omitted, the local-development default is `test-key`. Set a non-default value outside local development.
 
+## Deploy the public demo
+
+The repository includes a Render Blueprint for a free Docker-based web service:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FBigFiiish%2Fcatalog-order-service)
+
+The public demo uses the visible `test-key` credential so visitors can interact with the API immediately. The Blueprint disables outbound webhook delivery while keeping the asynchronous shipping path active, preventing a public visitor from turning the demo into an arbitrary HTTP relay. Local runs retain real webhook delivery by default.
+
+The free service uses in-memory H2 data. Inventory and orders reset whenever Render restarts or spins down the instance; this is intentional for a portfolio demo, not a production persistence model.
+
 ### Docker
 
 ```bash
