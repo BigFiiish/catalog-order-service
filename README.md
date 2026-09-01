@@ -1,6 +1,9 @@
 # Catalog Order Service
 
 [![CI](https://github.com/BigFiiish/catalog-order-service/actions/workflows/ci.yml/badge.svg)](https://github.com/BigFiiish/catalog-order-service/actions/workflows/ci.yml)
+[![Live Demo](https://img.shields.io/badge/live-demo-bdf05a)](https://xingji-catalog-order-service.onrender.com)
+
+**Live demo:** [xingji-catalog-order-service.onrender.com](https://xingji-catalog-order-service.onrender.com)
 
 A transaction-focused commerce backend built with Java 21, Spring Boot, Spring JDBC, and H2. It demonstrates the failure modes that matter in order processing: concurrent inventory updates, duplicate requests, partial failures, and slow downstream webhooks.
 
